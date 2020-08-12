@@ -2,7 +2,7 @@
   "name": "attendance",
   "version": "0.1.0",
   "private": true,
-  "homepage":"/src/react",
+  "homepage": "/src/react",
   "dependencies": {
     "@babel/core": "7.9.0",
     "@svgr/webpack": "4.3.3",
@@ -52,6 +52,8 @@
     "resolve": "1.15.0",
     "resolve-url-loader": "3.1.1",
     "sass-loader": "8.0.2",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^1.1.1",
     "semver": "6.3.0",
     "style-loader": "0.23.1",
     "terser-webpack-plugin": "2.3.5",
