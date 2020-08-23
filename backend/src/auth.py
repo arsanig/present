@@ -9,7 +9,7 @@ from src.db import get_db
 
 bp = Blueprint('auth', __name__)
 
-@bp.route('/register', methods=["POST"])
+@bp.route('/register', methods=['POST'])
 def register():
     if request.method == 'POST':
         data = request.get_json()
