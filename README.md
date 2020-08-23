@@ -15,4 +15,4 @@ Usually I'll start a project like this but never finish it, let alone polish it.
 ### 🙃 For fun in order:
 1. Teachers can export class list as CSV
 2. Containerize this *****
-3. Throw branding all over it (colour schemes, logos, responsive UI)
+3. Throw branding all over it (colour schemes, logos)
