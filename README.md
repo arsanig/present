@@ -2,7 +2,7 @@
 
 Present is a classroom management project that I'm working on to practice/revisit making fullstack applications. 
 
-Usually I'll start a project like this but never finish it, let alone polish it. In addition, I'll probably learn more about some of the tech I'm using.
+Usually I'll start a project like this but never finish it, let alone polish it. Let's not forget testing it too! In addition, I'll probably learn more about some of the tech I'm using.
 
 ### ✔ Only feature list I'm targeting:
 - User roles: Teacher & Student
