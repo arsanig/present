@@ -14,10 +14,10 @@ def create_app(test_config=None):
     def index():
         return 'Landing screen with a call to action...'
 
-    import db
+    from . import db
     db.init_db(app)
     
-    import auth
+    from . import auth
     app.register_blueprint(auth.bp)
 
     return app
