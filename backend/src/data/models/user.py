@@ -1,12 +1,11 @@
 import datetime
 
 from sqlalchemy import Column, Integer, String
-from . import db
 
-class User(db.Base):
+class User():
     __tablename__ = 'users'
     id = Column(Integer, primary_key=True)
-    created_on = Column(DateTime(timezone=True), nullable=False)
+    # created_on = Column(DateTime(timezone=True), nullable=False)
     email = Column(String(120), unique=True, nullable=False)
     password = Column(String(300), nullable=False)
     role = Column(String(128), nullable=False, default='student')
