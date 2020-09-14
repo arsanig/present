@@ -28,7 +28,7 @@ yarn-error.log*
 backend/venv/
 
 backend/*.pyc
-backend/src/__pycache__
+backend/**/__pycache__
 
 backend/instance/
 

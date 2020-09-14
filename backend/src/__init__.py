@@ -13,7 +13,7 @@ def create_app(test_config=None):
     def index():
         return 'Landing screen with a call to action...'
 
-    from . import db
+    from .data import db
     db.init_db(app)
     
     from . import auth

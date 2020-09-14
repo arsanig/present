@@ -7,7 +7,7 @@ export default class Register extends Component {
         super(props);
 
         this.state = {
-            username: "",
+            email: "",
             password: "",
             registrationErrors: ""
         };
@@ -27,7 +27,7 @@ export default class Register extends Component {
             .post(
                 "/register",
                 {
-                    username: this.state.username,
+                    email: this.state.email,
                     password: this.state.password
                 },
                 { withCredentials: true }
@@ -49,9 +49,9 @@ export default class Register extends Component {
                 <Form onSubmit={this.handleSubmit}>
                     <Form.Field>
                         <input 
-                            name="username"
-                            placeholder="Username"
-                            value={this.state.username}
+                            name="email"
+                            placeholder="Email"
+                            value={this.state.email}
                             onChange={this.handleChange}
                             required
                         />
