@@ -1,10 +1,8 @@
 import datetime
-from .. import db
+from ..db import Base
 from sqlalchemy import Column, Integer, String
 
-class User(db.Base):
-    query = db.db_session.query_property()
-
+class User(Base):
     __tablename__ = 'users'
     id = Column(Integer, primary_key=True)
     public_id = Column(String(50), unique=True)
@@ -13,9 +11,12 @@ class User(db.Base):
     password = Column(String(300), nullable=False)
     role = Column(String(128), nullable=False, default='student')
 
-    def __init__(self, created_on=None, public_id=None, email=None, password=None, role='student'):
+    def __init__(self, public_id=None, email=None, password=None, role='student'):
         #self.created_on = created_on
         self.public_id = public_id
         self.email = email
         self.password = password
         self.role = role
+
+    def __repr__(self):
+        return '<User %r>' % (self.name)

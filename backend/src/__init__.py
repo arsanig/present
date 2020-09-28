@@ -1,5 +1,6 @@
 import os
 from flask import Flask
+from .data.db import db_session
 
 def create_app(test_config=None):
     # create and configure the app
@@ -18,5 +19,9 @@ def create_app(test_config=None):
     
     from . import auth
     app.register_blueprint(auth.bp)
+
+    @app.teardown_appcontext
+    def shutdown_session(exception=None):
+        db_session.remove()
 
     return app
